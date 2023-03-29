@@ -1,0 +1,342 @@
+* {
+ 
+    padding:0;
+    margin:0;
+
+}
+
+body {
+
+    background-color: rgb(230, 242, 252);
+    max-width: 1920px;
+
+}
+
+#carrito:active, #carrito:link, #carrito:visited {
+ 
+    color: black;
+    text-decoration: none;
+
+}
+
+
+.barraSuperior {
+
+    height: 5em;
+    padding: 1em;
+    background-color: rgb(230, 242, 252);
+   
+
+}
+.primeraFila {
+
+   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.redes {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+
+}
+
+#carrito {
+    
+    background-color: #7ed2d8;
+    border: 1px solid;
+    border-color:black;
+    border-radius: 5px;
+    font-family: 'Lato', sans-serif;
+   
+   
+}
+
+.icono {
+
+    margin: .35em .15em;
+    height:1.25em;
+    padding: .3em .35em;
+    width: 22px;
+    border-radius: 5px;
+
+}
+
+
+.menu {
+ 
+    width: 100%;
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+#desplegarMenuPrincipal:hover{
+
+    -webkit-box-shadow:0px 0px 24px 8px rgba(151,168,163,0.9);
+    -moz-box-shadow: 0px 0px 24px 8px rgba(151,168,163,0.9);
+    box-shadow: 0px 0px 24px 8px rgba(151,168,163,0.9);
+
+}
+
+#desplegarMenuPrincipal {
+
+    cursor: pointer;
+
+}
+
+.menuDesplegable {
+    
+    width:100%;
+    max-width: 15em;
+    margin: 1em;   
+    
+
+}
+
+#desplegable {
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: rgb(230, 242, 252);
+    border: 1px solid;
+    border-color:black;
+    border-radius: 10px;
+    padding: 1em; 
+    visibility:hidden;
+    left: -22em;
+    top: -4em;
+    transition: 1s;
+    z-index:10;
+
+}
+
+.opciones, .opcionesSubmenu{
+
+    font-family: 'Dancing Script', cursive;
+
+}
+
+a:active, a:link, a:visited {
+
+    color: black;
+    text-decoration: none;
+
+}
+
+.primeraFilaMenu {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: left;
+    position: relative;
+    top: -0.5em;
+    left: -0.25em;
+    
+}
+
+.tituloFilaDesplegable {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    
+
+    
+}
+
+.submenu {
+
+    padding-left: 2em;
+    display: none;
+    position: relative;
+   
+    
+}
+
+#desplegarSubmenuMujer, #desplegarSubmenuHombre {
+
+    position: relative;
+    right: -2.6em;
+    cursor: pointer;
+
+}
+
+#contraerSubmenuMujer, #contraerSubmenuHombre{
+
+    visibility: hidden;
+    cursor: pointer;
+
+}
+
+.cuerpo {
+        
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: rgb(230, 242, 252);
+
+}
+
+
+.footer {
+
+    width: 100%;
+    background-color: rgb(230, 242, 252);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    position: absolute;
+    top: 50em;
+
+}
+
+.datos {
+
+    color: rgb(125,125,125);
+    font-family: 'Lato', sans-serif;
+    font-size: 0.7em;
+    margin-left: 3em;
+
+}
+
+.nombre {
+
+    font-family: 'Pacifico', cursive;
+    font-size: 5em;
+    color: rgb(1, 4, 49);
+
+}
+
+.copyright {
+
+    align-items: center;
+    color: rgb(0, 0, 0);
+    margin-right: 3em;
+
+}
+
+
+.grupoProductos {
+ 
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    position: absolute;
+    top: 12em;
+  
+      
+ }
+
+ .tarjeta {
+    
+    min-width: 20em;
+    max-width: 25em;
+    background-image: none;
+    background-color: #fff;
+    margin: 1em;
+    padding: 1em;
+    border: solid 0.15em rgb(0,0,0);
+    border-radius: 1em;
+    transition: 0.5s;
+    min-height: 25em;
+    
+    
+}
+
+.tarjeta:hover{
+
+    cursor: pointer;
+    -webkit-box-shadow:10px 10px 5px 5px rgb(196, 222, 243);
+    -moz-box-shadow: 10px 10px 5px 5px rgb(196, 222, 243);
+    box-shadow: 10px 10px 5px 5px  rgb(196, 222, 243);
+
+}
+
+.marcoTarjeta {
+
+    background-color: #95d1fa;
+    padding: 0.5em;
+    border-radius: 1em;
+    min-height: 25em;
+   
+}
+
+.marcoTarjeta img{
+    
+    max-width: 100%;
+    margin: auto;
+    border: solid thin rgb(0,0,0);  
+    border-radius: 1em;  
+  
+}
+
+.textoTarjeta {
+
+    display:grid;
+    padding: 0.5em;
+    height: 10em;
+
+
+}
+
+.nombreProducto {
+
+    text-decoration: underline;
+    font-weight: 800;  
+    font-size: 3em;
+    text-align: center; 
+    font-family: 'Dancing Script', cursive;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+
+}
+
+.precioProducto {
+
+
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+
+}
+
+
+
+#imagen2tarjeta1, #imagen2tarjeta2, #imagen2tarjeta3 {
+
+    display: none;
+
+}
+
+.esfumado {
+
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+
+}
+  
+@keyframes fade {
+
+    from {opacity: .4} 
+    to {opacity: 1}
+
+}
